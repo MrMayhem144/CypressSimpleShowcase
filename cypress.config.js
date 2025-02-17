@@ -27,7 +27,12 @@ module.exports = defineConfig({
         log(message) {
           console.log(message);
           return null;
-        }
+        },
+
+      env: {
+      hideXhr: true
+      }
+      
       });
 
       return config; // Always return config
